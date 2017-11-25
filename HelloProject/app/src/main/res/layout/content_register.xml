@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/rl_register_main_content"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:orientation="vertical"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
     <TextView
         android:id="@+id/btn_to_login"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/btn_to_login"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
-        android:layout_alignParentRight="true"
+        android:layout_marginLeft="35dp"
         android:textColor="@color/colorPrimary"
         android:foreground="@drawable/ripple_primary"
         android:padding="8dp"
@@ -45,7 +46,6 @@
         android:id="@+id/input_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_username"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
@@ -68,7 +68,6 @@
         android:id="@+id/input_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_phone"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
@@ -91,7 +90,6 @@
         android:id="@+id/input_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_email"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
@@ -115,7 +113,6 @@
         android:id="@+id/input_confirm_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_password"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
@@ -140,7 +137,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lbl_gender"
-        android:layout_below="@id/input_confirm_password"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
@@ -151,7 +147,6 @@
         android:id="@+id/radiogrp_gender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_gender"
         android:orientation="horizontal"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
@@ -187,7 +182,6 @@
         android:id="@+id/input_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/radiogrp_gender"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="36dp"
@@ -218,7 +212,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
-        android:layout_below="@id/input_address"
         android:layout_marginLeft="36dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="36dp"
@@ -228,4 +221,4 @@
         android:foreground="@drawable/ripple_white"
         />
 
-</RelativeLayout>
+</LinearLayout>
